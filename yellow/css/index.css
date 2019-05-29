@@ -1,123 +1,58 @@
-
-
 /* 产品中心pro_center */
+
 /* top */
+
 .top_content {
     margin-left: 40px;
     width: 1000px;
     font-size: 15px;
 }
+
 .top_content .f_r a {
+    float: left;
     display: block;
     line-height: 60px;
     border: 0;
     background: none;
     background-color: none;
     z-index: 20;
+    margin-left: 19px;
 }
+
+.top_content .f_r a span {
+    font-size: 12px;
+}
+
 .top_content .f_l {
     line-height: 60px;
 }
+
 .top_content .f_l a:nth-child(1) {
     color: #57474d;
 }
+
 .top_content .f_l a:nth-child(2) {
     color: #b7276f;
     font-weight: 700;
 }
 
-/* company */
-.company {
-    position: relative;
-    margin: 35px 0;
-}
-.company .company_hd {
-    width: 264px;
-}
-.company .company_hd a {
-    text-decoration: none;
-}
-.company .company_hd a h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #fe4040;
-    font-size: 15px;    
-    font-weight: 700;
-}
-.company .company_hd span {
-    display: block;
-    margin-bottom: 15px;
-    background: url(../images/star.png);
-    width: 63px;
-    height: 11px;
-}
-.company .company_hd p {
-    color: #484848;
-    font-size: 11px;
-    margin-bottom: 0;
-}
-
-.company .icon_collect {
-    background: url(../images/collect.png);
-    width: 74px;
-    height: 22px;
-    margin-top: -5px;
-}
-.company .phone {
-    position: absolute;
-    right: 196px;
-}
-.company .phone .icon_phone {
-    width: 28px;
-    height: 28px;
-    background: url(../images/phone.png);
-    position: absolute;
-    left: -40px;
-    top: -4px;
-}
-.company .phone span:last-child {
-    font-size: 14px;
-    color: #fe4040;
-}
-
-/* nav */
-.nav {
-    width: 100%;
-    height: 30px;
-}
-.nav ul li {
-    width: 140px;
-    height: 29px;
-    float: left;
-}
-.nav ul li:hover a{
-    background-color: #fff;
-}
-.nav ul li.active a{
-    background-color: #fff;
-    color: #386ed3;
-}
-.nav ul li a {
-    display: block;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    text-decoration: none;
-}
-
 /* main title */
+
 .main .title {
     height: 49px;
     /* padding: 10px 0; */
 }
+
 .main .title p {
     line-height: 49px;
     margin: 0;
     font-size: 11px;
 }
+
 .main .title form {
     margin-top: 10px;
 }
+
 .main .title form input {
     width: 120px;
     height: 26px;
@@ -125,21 +60,29 @@
     border-radius: 5px;
     margin-right: 32px;
 }
+
 .main .title form button {
     background-color: #fe4040;
     border-radius: 5px;
-    color: #fff;
     border: 0;
     width: 60px;
     height: 26px;
 }
+
+.main .title form button a {
+    color: #fff;
+}
+
 .main .title form button:first-child {
     margin-right: 15px;
 }
+
 /* main left */
+
 .main .left {
     width: 206px;
 }
+
 .main .left h2 {
     height: 30px;
     font-size: 16px;
@@ -147,39 +90,50 @@
     padding: 10px 0 0 14px;
     margin: 0;
 }
+
 .main .left .item_info {
     padding: 18px 0 32px 14px;
 }
+
 .main .left .item_info h3 {
     margin: 0;
     font-size: 14px;
     margin-bottom: 19px;
 }
+
 .main .left .item_info h3 a {
     color: #000;
     text-decoration: none;
 }
+
 .main .left .item_info ul li {
     height: 18px;
     margin-bottom: 7px;
     font-size: 12px;
     color: #7c7c7c;
 }
+
 .main .left .item_info ul li a {
     color: #7c7c7c;
 }
+
+.main .left .item_info ul li .qq_talk {
+    display: inline;
+    color: #386ed3;
+}
+
 .main .left .item_info ul li:last-child {
     padding-bottom: 0;
 }
-.main .left .item_info ul li span {
-    /* display: inline-block; */
-}
+
+
 .main .left .item_info .icon_info_star {
     width: 16px;
     height: 15px;
     background: url(../images/one_star.png);
     display: inline-block;
 }
+
 .main .left .item_info .icon_info_phone {
     /* width: 110px; */
     height: 18px;
@@ -187,27 +141,35 @@
     display: inline-block;
     color: #ddd;
 }
+
 .main .left .item_info .icon_info_license {
     display: inline-block;
     width: 24px;
     height: 16px;
     background: url(../images/license.png);
 }
-.icon_info_license,.icon_info_phone,.icon_info_star {
+
+.icon_info_license, .icon_info_phone, .icon_info_star {
     vertical-align: middle;
 }
+
 .main .left .item_info a {
     display: block;
 }
-.main .left .item_info a button {
+
+.main .left .item_info button {
     display: block;
     border: 0;
     width: 160px;
     height: 20px;
     margin-bottom: 14px;
-    color: #fff;
     font-size: 12px;
 }
+
+.main .left .item_info button a {
+    color: #fff;
+}
+
 .main .left .item_info .left_bottom a {
     float: left;
     display: block;
@@ -219,17 +181,20 @@
     line-height: 20px;
     color: #7c7c7c;
 }
-.icon_info_collect,.icon_info_share{
+
+.icon_info_collect, .icon_info_share {
     margin-top: 3px;
     width: 12px;
     height: 12px;
     display: inline-block;
     background: url(../images/blank_star.png)
 }
+
 .icon_info_share {
     background: url(../images/spare.png)
 }
-.icon_contacts,.icon_fax,.icon_email,.icon_site {
+
+.icon_contacts, .icon_fax, .icon_email, .icon_site {
     width: 15px;
     height: 15px;
     display: inline-block;
@@ -238,93 +203,133 @@
     margin-right: 12px;
     vertical-align: middle;
 }
-.icon_fax { background-image: url(../images/fax.png); }
-.icon_email { background-image: url(../images/email.png); }
-.icon_site { background-image: url(../images/site.png); }
-.icon_qq { 
+
+.icon_fax {
+    background-image: url(../images/fax.png);
+}
+
+.icon_email {
+    background-image: url(../images/email.png);
+}
+
+.icon_site {
+    background-image: url(../images/site.png);
+}
+
+.icon_qq {
     margin: -3px 6px 0 6px;
     display: inline-block;
     vertical-align: middle;
     width: 18px;
     height: 18px;
-    background-image: url(../images/qq.png); 
+    background-image: url(../images/qq.png);
 }
-.qq_talk {
-    color: #386ed3;
-}
+
 .main .left .left_item h2 a {
     float: right;
     font-size: 13px;
     color: #fff;
     text-decoration: none;
 }
+
 .icon_arr_right {
     margin: 0 7px 0 5px;
     display: inline-block;
     width: 8px;
     height: 10px;
-    background-image: url(../images/arr_right.png); 
+    background-image: url(../images/arr_right.png);
 }
+
 /* main right */
+
 .main .right {
     padding-left: 18px;
     width: 979px;
 }
+
 .main .right .pro_list dl {
     padding: 14px 0 0 18px;
 }
+
 .main .right .pro_list dl dd {
     float: left;
     padding-left: 14px;
-} 
-.main .right .pro_list dl dd.active a{
+}
+
+.main .right .pro_list dl dd.active a {
     color: #386ed3;
 }
+
 .main .right .pro_list dl dt {
     float: left;
     font-weight: 700;
 }
+
 .main .right .pro_list ul {
-	/* overflow: hidden; */
-	/* width: 557px; */
+    /* overflow: hidden; */
+    /* width: 557px; */
     /* height: 464px; */
     margin-top: 54px;
 }
+
 .main .right .pro_list ul li {
-	float: left;
+    float: left;
     width: 183px;
     height: 222px;
-	padding-bottom: 33px;
+    padding-bottom: 33px;
 }
+
 .main .right .pro_list ul li a {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
+
 .main .right .pro_list ul li a img {
-	width: 100%;
+    width: 100%;
 }
+
 .main .right .pro_list ul li p {
-	overflow: hidden;
-	text-overflow:ellipsis;
-	white-space: nowrap;
-	width: 168px;
-	padding: 0 10px;
-	font-size: 12px;
-	color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 168px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
 }
+
 .main .right .pro_list ul li span {
-	display: inline-block;
-	padding-top: 10px;
-	margin-left: 10px;
-	font-size: 13px;
-	color: red;
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: red;
 }
+
 .nextpage {
     margin: 20px 0 0 162px;
 }
+
 .tab_list {
     margin-top: 28px;
 }
+
 .recommend_list {
     margin-top: 38px;
+}
+
+.headtop_nav_con_r {
+    margin-top: 9px;
+}
+
+.icon_arr_down {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 12px;
+    background: url(http://jic.makepolo.net/img/global/arr_down_back.png) center right no-repeat;
+    cursor: pointer;
+    vertical-align: middle;
 }
