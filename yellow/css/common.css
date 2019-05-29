@@ -235,6 +235,208 @@
 	color: red;
 }
 
+/* main_title */
+.main .title {
+    height: 49px;
+    /* padding: 10px 0; */
+}
+
+.main .title p {
+    line-height: 49px;
+    margin: 0;
+    font-size: 11px;
+}
+
+.main .title form {
+    margin-top: 10px;
+}
+
+.main .title form input {
+    width: 120px;
+    height: 26px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    margin-right: 32px;
+}
+
+.main .title form button {
+    background-color: #fe4040;
+    border-radius: 5px;
+    border: 0;
+    width: 60px;
+    height: 26px;
+}
+
+.main .title form button a {
+    color: #fff;
+}
+
+.main .title form button:first-child {
+    margin-right: 15px;
+}
+
+/* main left */
+.main .left {
+    width: 206px;
+}
+
+.main .left h2 {
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0 0 14px;
+    margin: 0;
+}
+
+.main .left .item_info {
+    padding: 18px 0 32px 14px;
+}
+
+.main .left .item_info h3 {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+
+.main .left .item_info h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.main .left .item_info ul li {
+    height: 18px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    color: #7c7c7c;
+}
+
+.main .left .item_info ul li a {
+    color: #7c7c7c;
+}
+
+.main .left .item_info ul li .qq_talk {
+    display: inline;
+    color: #386ed3;
+}
+
+.main .left .item_info ul li:last-child {
+    padding-bottom: 0;
+}
+
+
+.main .left .item_info .icon_info_star {
+    width: 16px;
+    height: 15px;
+    background: url(../images/one_star.png);
+    display: inline-block;
+}
+
+.main .left .item_info .icon_info_phone {
+    /* width: 110px; */
+    height: 18px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    color: #ddd;
+}
+
+.main .left .item_info .icon_info_license {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    background: url(../images/license.png);
+}
+
+.icon_info_license, .icon_info_phone, .icon_info_star {
+    vertical-align: middle;
+}
+
+.main .left .item_info a {
+    display: block;
+}
+
+.main .left .item_info button {
+    display: block;
+    border: 0;
+    width: 160px;
+    height: 20px;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.main .left .item_info button a {
+    color: #fff;
+}
+
+.main .left .item_info .left_bottom a {
+    float: left;
+    display: block;
+    background-color: #f0f0f0;
+    font-size: 12px;
+    width: 76px;
+    height: 20px;
+    margin-left: 4px;
+    line-height: 20px;
+    color: #7c7c7c;
+}
+
+.icon_info_collect, .icon_info_share {
+    margin-top: 3px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url(../images/blank_star.png)
+}
+
+.icon_info_share {
+    background: url(../images/spare.png)
+}
+
+.icon_contacts, .icon_fax, .icon_email, .icon_site {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../images/contacts.png);
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.icon_fax {
+    background-image: url(../images/fax.png);
+}
+
+.icon_email {
+    background-image: url(../images/email.png);
+}
+
+.icon_site {
+    background-image: url(../images/site.png);
+}
+
+.icon_qq {
+    margin: -3px 6px 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/qq.png);
+}
+
+.main .left .left_item h2 a {
+    float: right;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon_arr_right {
+    margin: 0 7px 0 5px;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    background-image: url(../images/arr_right.png);
+}
+
 
 /* 底部 友情链接 */
 .nav_bottom_box {
