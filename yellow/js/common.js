@@ -8,3 +8,4 @@ function taggleClass(ele,params) {
         $(this).addClass(params)
     })
 }
+

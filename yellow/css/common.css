@@ -283,7 +283,13 @@
 .recommend_list .tab_hd li.active a {
     color: #3863c9;
 }
+.recommend_list .tab_bd {
+    height: 222px;
+}
 /* 信息推荐 */
+.recommend_news {
+    display: none;
+}
 .recommend_list .recommend_news li {
 	float: left;
     width: 183px;
@@ -314,7 +320,10 @@
 	color: red;
 }
 /* 公司推荐 */
-.recommend_list .recommend_company,.recommend_pro {
+.recommend_company {
+    display: none;
+}
+.recommend_list .recommend_company {
     padding: 25px 82px 0 82px;
 }
 .recommend_list .recommend_company li {
@@ -330,6 +339,10 @@
     font-size: 12px;
 }
 /* 产品推荐 */
+.recommend_pro {
+    display: none;
+    padding: 25px 82px 0 61px;
+}
 .recommend_list .recommend_pro li {
     float: left;
     line-height: 37px;
@@ -342,6 +355,13 @@
     color: #333;
     font-size: 12px;
 }
+/* 显示隐藏 */
+.content_current {
+    display: block;
+    z-index: 100;
+}
+
+
 
 /* main_title */
 .main .title {
