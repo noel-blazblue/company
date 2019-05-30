@@ -28,7 +28,7 @@
     color: #666;
     border: 1px solid #ddd;
 }
-.nextpage a.current {
+.nextpage a.active {
     display: block;
     float: left;
     height: 28px;
@@ -206,6 +206,80 @@
     text-overflow: ellipsis;
     margin-top: 14px;
 }
+/* 相册 */
+.tab_list .tab_bd .tab_album li {
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 21px;
+}
+.tab_list .tab_bd .tab_album li:nth-child(3n){
+    margin-right: 0;
+}
+.tab_list .tab_bd .tab_album li img {
+    display: block;
+}
+.tab_list .tab_bd .tab_album li span {
+    display: block;
+    float: left;
+    color: #386ed3;
+    height: 32px;
+    padding-top: 14px;
+    font-size: 13px;
+    padding-left: 4px;
+}
+.tab_list .tab_bd .tab_album li span:last-of-type {
+    float: right;
+    font-size: 12px;
+    color: #999;
+}
+/* 视频 */
+.tab_list .tab_bd .tab_video li {
+    position: relative;
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 21px;
+}
+.tab_list .tab_bd .tab_video li:hover .mask {
+    display: block;
+}
+.tab_list .tab_bd .tab_video li:nth-child(4n){
+    margin-right: 0;
+}
+.tab_list .tab_bd .tab_video li img {
+    display: block;
+}
+.tab_list .tab_bd .tab_video li p {
+    color: #666;
+    padding-top: 14px;
+    font-size: 13px;
+}
+.tab_list .tab_bd .tab_video li .video_count {
+    padding-top: 14px;
+}
+.icon_heart {
+    display: inline-block;
+    width: 18px;
+    height: 11px;
+    background: url(../images/heart.png) center no-repeat;
+    margin-right: 5px;
+    margin-left: 16px;
+}
+.icon_eyes {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 11px;
+    background: url(../images/eyes.png) center no-repeat;
+}
+    /* 幕布 */
+.mask {
+    width: 230px;
+    height: 128px;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.2;
+    display: none;
+}
 /* 分类 */
 .tab_list .tab_bd .tab_tract .tab_cate li {
     float: left;
@@ -236,9 +310,6 @@
 }
 .tab_list .tab_bd .f_l p:last-of-type {
     margin-top: 15px;
-}
-.tab_list .tab_bd .f_r {
-    
 }
 
 /* 分列列表表 */

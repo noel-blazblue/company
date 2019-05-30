@@ -4,25 +4,24 @@ $(function() {
         $li = $('.nav ul li'),
         $a = $('.nextpage a').slice(1,-1),
         $tab_li = $('.recommend_list .tab_hd li'),
-        tab_list = [$dd,$li,$a,$tab_li]
+        tab_list = [{ele:$dd},{ele:$li},{ele:$a},{ele:$tab_li}]
 
-    taggleClass(tab_list)
+        toggleClass(tab_list)
 
 })
 
 // tab标签切换
-function taggleClass(list,params) {
-    var params = params || 'active'
+function toggleClass(list) {
     list.forEach(function (item) {
-        click(item)
+        click(item.ele, item.params || 'active')
     });
-    function click(ele) {
+    function click(ele, params) {
         ele.on('click',function() {
-            var $self = $(this) 
+            var $self = $(this),
+                $self_idx = $self.data('idx'),
+                $content_list = $('.recommend_list .tab_bd ul')
             $self.addClass(params).siblings().removeClass(params)
             if ($self.eq('.recommend_list .tab_hd li')) {
-                var $self_idx = $self.data('idx')
-                var $content_list = $('.recommend_list .tab_bd ul')
                 $content_list.eq($self_idx - 1).addClass('content_current').siblings().removeClass('content_current')
             }
         })
