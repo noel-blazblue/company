@@ -130,3 +130,99 @@
     cursor: pointer;
     vertical-align: middle;
 }
+
+/* 关于我们 about */
+.company_title .f_l h3 {
+    padding-bottom: 17px;
+    font-size: 16px;
+}
+.company_title .f_l h3 a {
+    color: #333;
+}
+.company_title .f_l p {
+    line-height: 22px;
+    font-size: 14px;
+    color: #666;
+}
+.company_title .f_r .company_info li {
+    float: left;
+    margin-left: 36px;
+}
+.company_title .f_r .company_info li img {
+    display: block;
+    width: 47px;
+    height: 47px;
+}
+.company_title .f_r .company_info li p {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #666;
+}
+.company_profile .text_content p {
+    line-height: 25px;
+    color: #666;
+}
+
+.license_img div {
+    padding-left: 168px;
+}
+.license_img div img {
+    margin-right: 92px;
+    margin-top: 10px;
+}
+.license_img div img:last-of-type {
+    margin-right: 0;
+}
+
+/* 联系信息 */
+.connect_msg {
+    padding-left: 33px;
+    margin-bottom: 46px;
+}
+.connect_msg .f_l ul {
+    padding-top: 28px;
+}
+.connect_msg .f_l ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.connect_msg .f_l ul li a {
+    color: #386ed3;
+}
+.connect_msg .f_l ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.connect_msg .f_r {
+    margin-top: 11px;
+}
+.connect_msg .f_r img {
+    display: block;
+    float: left;
+    margin-right: 53px;
+}
+.connect_msg .f_r ul {
+    padding-top: 35px;
+    display: block;
+    float: left;
+}
+.connect_msg .f_r ul li {
+    margin-bottom: 24px;
+    width: 120px;
+    height: 25px;
+    background: url(../images/square_blue.png);
+    text-align: center;
+    line-height: 25px;
+}
+.connect_msg .f_r ul li:first-of-type {
+    background: url(../images/square_orange.png);
+}
+.connect_msg .f_r ul li a {
+    color: #fff;
+}
+
+/* 商家地图 */
+.tab_list .map {
+    margin-top: 30px;
+}

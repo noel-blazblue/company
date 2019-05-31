@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="head y_container">
+        <div class="top clearfix">
+            <div class="top_logo f_l"><a href="http://china.makepolo.com/"><img src="images/makepolo_logo.png" ></a></div>
+            <div class="top_content clearfix f_l">
+                <div class="f_l">
+                    <a href="javascript:;">请登录</a>
+                    <a href="javascript:;">免费注册</a>
+                </div>
+                <!-- 下拉菜单 -->
+                <div class="headtop_nav_con_r">
+                    <div class="headtop_nav_con_r_common topnavcon_user_center">
+                        <a href="http://my.b2b.makepolo.com/ucenter/supply_index.php"
+                            onclick="stat2_rf('53280e7fd3050611627aca27e3f9d4ea','我的会员中心')"><span
+                                class="">我的会员中心<em></em></span></a>
+                        <div class="topnavcon_user_popup" style="display: none;">
+                            <div class="topnavcon_arrow"></div>
+                            <div class="topnavcon_user_items">
+                                <dl style="_height:62px;">
+                                    <dt>我是买家</dt>
+                                    <dd>
+                                        <a href="http://china.makepolo.com/purchase/new_iframe_purchase_add.php"
+                                            onclick="stat2_rf('53280e7fd3050611627aca27e3f9d4ea','发布求购')"
+                                            rel="nofollow">发布求购</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://china.makepolo.com/purchase/desk/purchase_list.php"
+                                            onclick="stat2_rf('53280e7fd3050611627aca27e3f9d4ea','我的求购')"
+                                            rel="nofollow">我的求购</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://china.makepolo.com/purchase/desk/inquiry_list.php"
+                                            onclick="stat2_rf('53280e7fd3050611627aca27e3f9d4ea','我的询盘')"
+                                            rel="nofollow">我的询盘</a>
+                                    </dd>
+                                    <div class="clear"></div>
+                                </dl>
+                                <div class="dash_line"></div>
+                                <dl style="border:none;">
+                                    <dt>我是卖家</dt>
+                                    <dd>
+                                        <a href="http://china.makepolo.com/cpc/spread/index.php" rel="nofollow">我的推广</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/reg/complete_corp_info.php"
+                                            rel="nofollow">我的商铺</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/product/product_add_new.php"
+                                            rel="nofollow">发布供应</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/product/product_gl_new.php"
+                                            rel="nofollow">管理供应</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/video/upload.php" rel="nofollow"
+                                            target="_blank">视频上传</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/video/list.php" rel="nofollow"
+                                            target="_blank">视频管理</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://china.makepolo.com/ucenter/video/expand.php" rel="nofollow"
+                                            target="_blank">视频推广</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/purchase/supplier/subscribe_list.php?uc=1"
+                                            target="_blank">商机匹配</a>
+                                    </dd>
+                                    <div class="clear"></div>
+                                </dl>
+                                <div class="dash_line"></div>
+                                <dl style="border:none;">
+                                    <dt>我的账户</dt>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/user/client_trans.php"
+                                            rel="nofollow">账户余额</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/servuce_mall/service_list.php?p_state=998"
+                                            rel="nofollow">服务订单</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/purchase/supplier/bussines_point.php?uc=1"
+                                            rel="nofollow">我的商机点</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://my.b2b.makepolo.com/ucenter/user/change_password_email.php"
+                                            target="_blank" rel="nofollow">账号管理</a>
+                                    </dd>
+                                    <div class="clear"></div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topnavcon_user_message" style="display: none;">
+                        <div id="messagecount_2"></div>
+                        <div class="topnavcon_user_popup w135" style="width:135px">
+                            <div class="topnavcon_arrow"></div>
+                            <div class="topnavcon_user_item">
+                                <a href="http://my.b2b.makepolo.com/purchase/supplier/customer_inquire.php?uc=1"
+                                    rel="nofollow"><i id="kh_xunpan"></i>客户询盘</a>
+                            </div>
+                            <div class="topnavcon_user_item">
+                                <a href="http://my.b2b.makepolo.com/purchase/supplier/subscribe_list.php?uc=1"
+                                    rel="nofollow"><i id="read_count"></i>商机匹配</a>
+                            </div>
+                            <div class="topnavcon_user_item">
+                                <a href="http://my.b2b.makepolo.com/purchase/supplier/inventer_bid.php?uc=1"
+                                    rel="nofollow"><i id="head_zn_tender"></i>招标邀请</a>
+                            </div>
+                            <div class="topnavcon_user_item">
+                                <a href="http://my.b2b.makepolo.com/ucenter/msg/message_online.php" rel="nofollow"><i
+                                        id="fk_msg"></i>访客留言</a>
+                            </div>
+                            <div class="topnavcon_user_item">
+                                <a href="http://my.b2b.makepolo.com/ucenter/msg/new_system_msg.php" rel="nofollow"><i
+                                        id="sys_msg"></i>系统消息</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headtop_nav_con_r_common topnavcon_nav_menu">
+                        <span class="">网站导航<em></em></span>
+                        <div class="topnavcon_user_popup" style="display: none;">
+                            <div class="topnavcon_arrow"></div>
+                            <div class="nav_menu">
+                                <dl style="height:145px;">
+                                    <dt>专业市场</dt>
+                                    <dd><a href="http://china.makepolo.com/list/d9/">通用机械设备</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d10/">行业专业设备</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d2/">工业原料</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d8/">建筑设备</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d6/">工具</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d1/">建材与装饰材料</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d24/">商务服务</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d149674/">办公用品</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d4/">电子元器件</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d13/">仪器仪表</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d23/">汽摩用品/配件</a></dd>
+                                    <dd><a href="http://china.makepolo.com/list/d12/">交通运输</a></dd>
+                                    <div class="clear"></div>
+                                </dl>
+                                <div class="dash_line"></div>
+                                <dl style="border:none;">
+                                    <dt>特色市场</dt>
+                                    <dd>
+                                        <a href="http://news.makepolo.com/" rel="nofollow">行业资讯</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://info.makepolo.com/" rel="nofollow">采购百科</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://china.makepolo.com/aboutus/index.php?t=109&amp;c=109"
+                                            rel="nofollow">代理加盟</a>
+                                    </dd>
+                                    <div class="clear"></div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headtop_nav_con_r_common topnavcon_help">
+                        <span>帮助<em></em></span>
+                        <div class="topnavcon_user_popup" style=" display:none;">
+                            <div class="topnavcon_arrow"></div>
+                            <div class="nav_help">
+                                <dl>
+                                    <dd><a href="http://china.makepolo.com/help" rel="nofollow">帮助中心</a></dd>
+                                    <dd><a href="#" target="_self" onclick="doiframeopinionadd();">意见反馈</a></dd>
+                                    <dd>
+                                        <a href="http://sighttp.qq.com/msgrd?v=3&amp;uin=2943394506&amp;site=qq&amp;menu=yes"
+                                            rel="nofollow">在线咨询</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="company clearfix">
+            <div class="company_hd f_l">
+                <a href="javascript:;">
+                    <h3>沈阳三机数控技术有限公司</h3>
+                </a>
+                <span class="icon_star"></span>
+                <p>主营产品：数控送料机、数控折弯机、数控折弯机</p>
+            </div>
+            <a href="javascript:;" class="icon_collect f_l"></a>
+            <p class="phone">
+                <span class="icon_phone f_r"></span>
+                <span>136-1020-5956</span>
+            </p>
+        </div>
+    </header>
+    <nav class="nav theme_color">
+        <ul class="y_container clearfix">
+            <li class="active"><a href="javascript:;">公司首页</a></li>
+            <li><a href="javascript:;">产品中心</a></li>
+            <li><a href="javascript:;">视频中心</a></li>
+            <li><a href="javascript:;">企业相册</a></li>
+            <li><a href="javascript:;">关于我们</a></li>
+            <li><a href="javascript:;">联系我们</a></li>
+            <li><a href="javascript:;">企业资源</a></li>
+        </ul>
+    </nav>
+    <div class="main y_container">
+        <div class="title">
+            <p class="f_l">当前位置：<a href="javascript:;">首页</a>><a href="javascript:;">联系我们</a></p>
+            <form class="f_r" action="javascript:;">
+                <input type="text">
+                <button><a href="javascript:;">搜本店</a></button>
+                <button><a href="javascript:;">搜全站</a></button>
+            </form>
+        </div>
+        <!-- 联系信息 -->
+        <div class="connect_msg clearfix">
+            <div class="f_l">
+                <ul>
+                    <li><img src="images/con_person.png" alt=""><span>联系人：李朵朵</span></li>
+                    <li><img src="images/con_qq.png" alt=""><span>QQ：38576920567</span></li>
+                    <li><img src="images/con_tele.png" alt=""><span>电话：010-6682426</span></li>
+                    <li><img src="images/con_phone.png" alt=""><span>手机：13610920769</span></li>
+                    <li><img src="images/fax.png" alt=""><span>传真：010-6682426</span></li>
+                    <li><img src="images/con_idx.png" alt=""><span>官网：<a href="http://china.makepolo.com">http://china.makepolo.com</a></span></li>
+                    <li><img src="images/site.png" alt=""><span>地址：北京市海淀区学清路8号科技财富中心A座10层</span></li>
+                </ul>
+            </div>
+            <div class="f_r">
+                <img src="images/二维码.png" alt="">
+                <ul>
+                    <li><a href="javascript:;">进入产品中心</a></li>
+                    <li><a href="javascript:;">查看企业相册</a></li>
+                    <li><a href="javascript:;">点击询盘</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 商家地图 -->
+        <div class="tab_list clearfix">
+            <div class="tab_hd clearfix">
+                <h2 class="f_l">企业相册</h2>
+            </div>
+            <img class="map" src="images/map.png" alt="">
+        </div>
+        
+        <!-- 产品分类 -->
+        <div class="tab_list clearfix">
+            <div class="tab_hd clearfix">
+                <h2 class="f_l">产品分类</h2>
+            </div>
+            <div class="tab_bd">
+                <div class="tab_tract">
+                    <ul class="tab_wide clearfix">
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                        <li><a href="javascript:;">泵与阀门</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <!-- 推荐列表 -->
+        <div class="recommend_list">
+            <ul class="tab_hd clearfix">
+                <li class="active" data-idx="1"><a href="javascript:;">信息推荐</a></li>
+                <li data-idx="2"><a href="javascript:;">公司推荐</a></li>
+                <li data-idx="3"><a href="javascript:;">产品推荐</a></li>
+                <li data-idx="4"><a href="javascript:;">品牌推荐</a></li>
+                <li data-idx="5"><a href="javascript:;">搜索推荐</a></li>
+            </ul>
+            <div class="tab_bd">
+                <!-- 信息推荐 -->
+                <ul class="recommend_news clearfix content_current">
+                    <li><a href="javascript:;">
+                            <img src="images/hair.png" >
+                            <p>网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 </p>
+                            <span>￥7200.00/台</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <img src="images/hair.png" >
+                            <p>网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 </p>
+                            <span>￥7200.00/台</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <img src="images/hair.png" >
+                            <p>网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 </p>
+                            <span>￥7200.00/台</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <img src="images/hair.png" >
+                            <p>网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 </p>
+                            <span>￥7200.00/台</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <img src="images/hair.png" >
+                            <p>网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 网带式烘干设节能 </p>
+                            <span>￥7200.00/台</span>
+                        </a></li>
+                </ul>
+                <!-- 公司推荐 -->
+                <ul class="recommend_company clearfix">
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                    <li><a href="javascript:;">沈阳三机数控技术有限公司</a></li>
+                </ul>
+                <!-- 产品推荐 -->
+                <ul class="recommend_pro clearfix">
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                    <li><a href="javascript:;">沈阳三机数控</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- 友情链接 -->
+    <div class="nav_bottom_box clearfix">
+        <div class="nav_bottom">
+            <div class="friend_link clearfix">
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd><a href="">中钢网</a><span>|</span></dd>
+                    <dd><a href="">环境监测</a><span>|</span></dd>
+                    <dd><a href="">中国建设招标网</a><span>|</span></dd>
+                    <dd><a href="">装修论坛</a><span>|</span></dd>
+                    <dd><a href="">电缆网</a><span>|</span></dd>
+                    <dd><a href="">酒水代理</a><span>|</span></dd>
+                    <dd><a href="">今日鸡蛋价格</a><span>|</span></dd>
+                    <dd><a href="">社保查询</a></dd>
+                </dl>
+            </div>
+            <div class="web_link clearfix">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="">会员注册</a></dd>
+                    <dd><a href="">新手上路</a></dd>
+                    <dd><a href="">找回密码</a></dd>
+                    <dd><a href="">找回用户名</a></dd>
+                </dl>
+                <dl>
+                    <dt>买家服务</dt>
+                    <dd><a href="">寻求供应商</a></dd>
+                    <dd><a href="">发布求购询盘</a></dd>
+                    <dd><a href="">求购询盘管理</a></dd>
+                    <dd><a href="">订单管理</a></dd>
+                </dl>
+                <dl>
+                    <dt>卖家服务</dt>
+                    <dd><a href="">企业店铺管理</a></dd>
+                    <dd><a href="">产品信息管理</a></dd>
+                    <dd><a href="">商机助手</a></dd>
+                    <dd><a href="">一键搬家</a></dd>
+                    <dd><a href="">商机点</a></dd>
+                </dl>
+                <dl>
+                    <dt>增值服务</dt>
+                    <dd><a href="">办理订单通</a></dd>
+                    <dd><a href="">办理标王</a></dd>
+                    <dd><a href="">马可金融</a></dd>
+                    <dd><a href="">会员置顶</a></dd>
+                    <dd><a href="">最贵标识</a></dd>
+                </dl>
+                <dl>
+                    <dt>交易安全</dt>
+                    <dd><a href="">交易保障</a></dd>
+                    <dd><a href="">支付退款</a></dd>
+                    <dd><a href="">马可规则</a></dd>
+                    <dd><a href="">投诉举报</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="clearfix">
+        <div class="letter clearfix">
+            按字母分类：
+            <a href="http://paihang.makepolo.com/product_A1.shtml">A</a>
+            <a href="http://paihang.makepolo.com/product_B1.shtml">B</a>
+            <a href="http://paihang.makepolo.com/product_C1.shtml">C</a>
+            <a href="http://paihang.makepolo.com/product_D1.shtml">D</a>
+            <a href="http://paihang.makepolo.com/product_E1.shtml">E</a>
+            <a href="http://paihang.makepolo.com/product_F1.shtml">F</a>
+            <a href="http://paihang.makepolo.com/product_G1.shtml">G</a>
+            <a href="http://paihang.makepolo.com/product_H1.shtml">H</a>
+            <a href="http://paihang.makepolo.com/product_I1.shtml">I</a>
+            <a href="http://paihang.makepolo.com/product_J1.shtml">J</a>
+            <a href="http://paihang.makepolo.com/product_K1.shtml">K</a>
+            <a href="http://paihang.makepolo.com/product_L1.shtml">L</a>
+            <a href="http://paihang.makepolo.com/product_M1.shtml">M</a>
+            <a href="http://paihang.makepolo.com/product_N1.shtml">N</a>
+            <a href="http://paihang.makepolo.com/product_O1.shtml">O</a>
+            <a href="http://paihang.makepolo.com/product_P1.shtml">P</a>
+            <a href="http://paihang.makepolo.com/product_Q1.shtml">Q</a>
+            <a href="http://paihang.makepolo.com/product_R1.shtml">R</a>
+            <a href="http://paihang.makepolo.com/product_S1.shtml">S</a>
+            <a href="http://paihang.makepolo.com/product_T1.shtml">T</a>
+            <a href="http://paihang.makepolo.com/product_U1.shtml">U</a>
+            <a href="http://paihang.makepolo.com/product_V1.shtml">V</a>
+            <a href="http://paihang.makepolo.com/product_W1.shtml">W</a>
+            <a href="http://paihang.makepolo.com/product_X1.shtml">X</a>
+            <a href="http://paihang.makepolo.com/product_Y1.shtml">Y</a>
+            <a href="http://paihang.makepolo.com/product_Z1.shtml">Z</a>
+        </div>
+        <div class="inside_link clearfix">
+            <a href="http://china.makepolo.com/aboutus/index.php" rel="nofollow">关于马可波罗网<span>|</span></a>
+            <a href="http://china.makepolo.com/aboutus/index.php?t=116&amp;c=116" rel="nofollow">联系我们<span>|</span></a>
+            <a href="" rel="nofollow">欢迎合作<span>|</span></a>
+            <a href="http://paihang.makepolo.com/" rel="nofollow">行业排行<span>|</span></a>
+            <a href="" rel="nofollow">企业首页<span>|</span></a>
+            <a href="" rel="nofollow">法律声明<span>|</span></a>
+            <a href="" rel="nofollow">隐私声明</a>
+        </div>
+        <div class="approve clearfix">
+            <p>
+                贺马可波罗荣获
+                <a href="http://china.makepolo.com/home/html/aboutUs/scqj.html" rel="nofollow"
+                    class="linesbg">中国电子商务最具市场前景奖</a>
+                <a href="http://china.makepolo.com/home/html/aboutUs/top10.html" rel="nofollow"
+                    class="linesbg">中国电子商务最具投资价值企业</a>
+                <a href="http://news.xinhuanet.com/tech/2010-12/15/c_12883416.htm"
+                    rel="nofollow">总裁苏继挺先生荣获【电子商务行业最佳CEO】</a>
+            </p>
+            <p>
+                <a href="http://www.miibeian.gov.cn/" rel="nofollow">京ICP证070102号</a>京公网安备1101085016号
+                <a href="http://www.miibeian.gov.cn/"
+                    rel="nofollow">京ICP备09078656号-7</a>互联网药品信息服务资格证书编号：(京)-经营性-2011-0025
+            </p>
+        </div>
+        <div class="pic_link">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="http://jic.makepolo.cn/js/global.js"></script>
+<script src="http://jic.makepolo.cn/js/head/header_new.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
