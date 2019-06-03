@@ -372,6 +372,17 @@
 .recommend_list .tab_bd {
     height: 222px;
 }
+/* 宽推荐 */
+.recommend_list .tab_hd.wide li {
+    float: left;
+    width: 193px;
+    text-align: center;
+    font-size: 17px;
+    margin-right: 30px;
+}
+.recommend_list .tab_hd.wide li:last-of-type {
+    margin-right: 0;
+}
 /* 信息推荐 */
 .recommend_news {
     display: none;
@@ -433,6 +444,9 @@
     float: left;
     line-height: 37px;
     margin-right: 109px;
+}
+.recommend_list .recommend_pro.wide li {
+    margin-right: 152px;
 }
 .recommend_list .recommend_pro li:nth-child(5n){
     margin-right: 0;
@@ -665,7 +679,7 @@
 }
 
 /* 表格 */
-.table_list li {
+/* .table_list li {
     border: 1px solid rgb(194, 194, 194);
     overflow: hidden;
 }
@@ -681,5 +695,29 @@
     width: 160px;
 }
 .table_list dd {
+    width: 236px;
+} */
+.table_list tr {
+    /* border: 1px solid rgb(194, 194, 194); */
+}
+.table_list tr {
+    display: block;
+    /* min-height: 20px; */
+    /* padding: 19px 0; */
+    overflow: hidden;
+}
+.table_list tr td {
+    display: block;
+    padding: 19px 0;
+    border: 1px solid rgb(194, 194, 194);
+    /* border-right: 1px solid rgb(194, 194, 194); */
+    vertical-align:middle;
+    height: 100%;
+    float: left;
+}
+.table_list tr td:nth-child(1n) {
+    width: 160px;
+}
+.table_list tr td:nth-child(2n) {
     width: 236px;
 }

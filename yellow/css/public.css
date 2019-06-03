@@ -107,7 +107,7 @@ z-index: 100;}
 .nav_menu dl dd{ width:90px; height:20px; float:left; }
 .topnavcon_help div.topnavcon_user_popup{ left:-30px; }
 
-.nav_help{ width:60px; padding:0 10px 7px 10px; }
+.nav_help{ /*width:60px;*/ padding:0 10px 7px 10px; }
 .nav_help dl{ width:60px; }
 .nav_help dl dd{height:22px; line-height:22px; vertical-align:middle; text-align:center; }
 .nav_help dl dd a{ display:block; height:26px; padding:0 5px; line-height:26px; vertical-align:middle; text-align:center; }
