@@ -1,0 +1,7 @@
+@media only screen and (min-width: 320px) { html { font-size: 42.6667px } }
+@media only screen and (min-width: 360px) { html { font-size: 48px;  } }
+@media only screen and (min-width: 375px) { html { font-size: 50px;  } }
+@media only screen and (min-width: 411px) { html { font-size: 54.8px;} }
+@media only screen and (min-width: 414px) { html { font-size: 55.2px;} }
+@media only screen and (min-width: 768px) { html { font-size: 102.4px;} }
+@media only screen and (min-width: 1024px) { html { font-size: 136.533px;} }

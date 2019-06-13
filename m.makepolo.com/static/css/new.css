@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.condition_wrap {
+    padding: 0 5px;
+    background-color: #fff;
+}
+
+.condition_wrap.absolute {
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+}
+
+.condition_list {}
+
+.condition_list li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.condition_list li.active {
+    color: red;
+}
+
+.condition_list li.active .icon_arrUp {
+    display: inline-block;
+}
+
+.condition_list li.active .icon_arrDown {
+    display: none;
+}
+
+.icon_arrUp {
+    display: none;
+}
+
+.condition_list li:hover {
+    border: 1px solid red;
+}
+
+.icon_arrDown,
+.icon_arrUp {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "SimSun";
+}
+
+.active {
+    display: block;
+}
+
+.condition_bd {
+    display: none;
+    padding: 10px 5px;
+}
+
+.condition_bd li {
+    float: left;
+    margin-top: 20px;
+    margin-right: 140px;
+}
+
+.condition_bd.active {
+    display: block;
+}
+
+.condition_bd li.active {
+    color: red;
+}

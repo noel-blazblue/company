@@ -164,7 +164,7 @@
 }
 
 .license_img div {
-    padding-left: 168px;
+    padding-left: 83px;
 }
 .license_img div img {
     margin-right: 92px;
@@ -225,4 +225,8 @@
 /* 商家地图 */
 .tab_list .map {
     margin-top: 30px;
+}
+
+.license_img {
+    margin-bottom: 110px;
 }

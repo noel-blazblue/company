@@ -58,7 +58,7 @@ mark { background: #ff0; }
 }
 body { box-sizing: border-box;}
 * {box-sizing: border-box;
-z-index: 100;}
+}
 .f_l {
     float: left;
 }

@@ -4,9 +4,11 @@ $(function() {
         $li = $('.nav ul li'),
         $a = $('.nextpage a').slice(1,-1),
         $tab_li = $('.recommend_list .tab_hd li'),
-        tab_list = [{ele:$dd},{ele:$li},{ele:$a},{ele:$tab_li}]
+        tab_list = [{ele:$dd},{ele:$li},{ele:$a},{ele:$tab_li}],
+        $phone = $('.block2')
 
         toggleClass(tab_list)
+        hidden($phone)
 
 })
 
@@ -26,4 +28,10 @@ function toggleClass(list) {
             }
         })
     }
+}
+
+function hidden(ele) {
+    ele.on('click',function (){
+        $(this).css('display','none')
+    })
 }
