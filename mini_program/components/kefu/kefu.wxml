@@ -1,0 +1,5 @@
+<!--components/kefu/kefu.wxml-->
+<button open-type='contact' class='contact'>
+    <image src='/pages/imgs/kf.png'></image>
+</button>
+

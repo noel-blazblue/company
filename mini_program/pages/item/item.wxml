@@ -1,0 +1,23 @@
+<view class='speices'>
+    <view class='top-bg'></view>
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==index?'active':''}}" wx:for="{{catList}}"  wx:key="{{item}}">
+            <view class='dange' data-current="{{index}}" bindtap="swichNav">{{item.cat_name}}</view>
+        </view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{catList.length}}" wx:key="[{item}">
+            <scroll-view scroll-y class="scoll-h" bindscrolltolower="bindDownLoad">
+                <block wx:for="{{proList}}" wx:key="{{item}}">
+                    <view class='spac' bindtap='goDetail' id='{{index}}'>
+                        <image src='{{item.show_image}}'></image>
+                        <view class='name'>{{item.title}}</view>
+                    </view>
+                </block>
+                <view style='clear:both;'></view>
+                <view class='showBottomText' wx:if='{{showBottomText}}' style='text-align:center'>没有了！</view>
+            </scroll-view>
+            
+        </swiper-item>
+    </swiper>
+</view>

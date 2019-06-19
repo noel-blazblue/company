@@ -1,0 +1,23 @@
+<import src='../../wxParse/wxParse.wxml' />
+<view class='detail'>
+    <view class='detail-img'>
+        <image src='{{proInfo.images_list[0].bigs_medium}}'></image>
+    </view>
+
+    <view class='introduce-box'>
+        <view class='title'>{{proInfo.title}}</view>
+        <view class='can-shu' wx:for='{{proInfo.product_std_attr}}' wx:key='{{item}}'>
+            <view class='can'>{{item.name}}: {{item.show}}</view>
+        </view>        
+        <view class='con'>
+            <template is='wxParse' data='{{wxParseData:product_desc.nodes}}' />
+            <!-- <rich-text nodes='{{proInfo.product_desc}}'></rich-text> -->
+        </view>
+    </view>
+
+    <view class='xunpan-box' bindtap='goXunpan'>
+        <view class='xunpan'>在线询盘</view>
+    </view>
+</view>
+<logo></logo>
+<kefu></kefu>

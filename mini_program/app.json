@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/item/item",
+    "pages/connect/connect",
+    "pages/company/company",
+    "pages/detail/detail",
+    "pages/xunpan/xunpan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#487FE4",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "公司首页",
+        "iconPath": "pages/imgs/index.png",
+        "selectedIconPath": "pages/imgs/indexs.png"
+      },
+      {
+        "pagePath": "pages/item/item",
+        "text": "产品分类",
+        "iconPath": "pages/imgs/item.png",
+        "selectedIconPath": "pages/imgs/items.png"
+      },
+      {
+        "pagePath": "pages/connect/connect",
+        "text": "联系方式",
+        "iconPath": "pages/imgs/phone.png",
+        "selectedIconPath": "pages/imgs/phones.png"
+      },
+      {
+        "pagePath": "pages/company/company",
+        "text": "公司介绍",
+        "iconPath": "pages/imgs/compony.png",
+        "selectedIconPath": "pages/imgs/componys.png"
+      }
+    ],
+    "selectedColor": "#487FE4"
+  },
+  "sitemapLocation": "sitemap.json"
+}

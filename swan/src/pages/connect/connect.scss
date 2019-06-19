@@ -1,0 +1,125 @@
+/* pages/connect/connect.wxss */
+
+page {
+    background-color: #e0e0e0;
+}
+
+.company-pic image {
+    width: 100%;
+    height: 360px;
+}
+
+.company-title {
+    width: 100%;
+    font-size: 29px;
+    box-sizing: border-box;
+    padding: 6px 8px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    line-height: 2;
+}
+.company-title .company-l {
+    position: relative;
+    padding-left:15px;
+}
+.company-title .company-l:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 38px;
+    background-color: #487fe4;
+    position: absolute;
+    top: 8px;
+    left: -4px;
+}
+.company-title .company-r {
+    width: 258px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 28px;
+    background-color: #487fe4;
+    color: #fff;
+    border-radius: 36px;
+}
+
+.company-title .company-r image {
+    width: 40px;
+    height: 40px;
+     vertical-align: middle; 
+    margin-right: 20px;
+}
+
+.compony-mes {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 16px 30px 0 30px;
+    margin-top: 2px;
+}
+
+.compony-mes image {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    vertical-align: middle;
+    margin-top: 9px;
+    text-overflow: ellipsis
+}
+
+.compony-mes .f {
+    margin-top: 0;
+}
+
+.compony-mes .phone {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid #487fe4;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 18px;
+    font-size: 32px;
+    margin-top: 24px;
+    color:#777;
+}
+.compony-mes .phone .phone-l{
+    display: flex;
+}
+.compony-mes .phone .phone-l .address{
+    width:568px;
+    height:52px;
+    overflow:hidden;
+    white-space:no-wrap;
+    text-overflow:ellipsis;
+}
+.compony-mes .phone .phone-r {
+    color: #487fe4;
+}
+
+.compony-mes .ewm-box {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.compony-mes .erwm {
+    margin: 24px auto;
+}
+
+.call {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #487fe4;
+    color: #fff;
+    font-size: 32px;
+}
+

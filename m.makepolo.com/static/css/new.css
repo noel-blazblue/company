@@ -10,32 +10,39 @@
 }
 
 .condition_wrap {
+    position: relative;
     padding: 0 5px;
     background-color: #fff;
 }
 
-.condition_wrap.absolute {
-    position: fixed;
-    top: 0;
-    z-index: 100000;
+.condition_bd.absolute {
+
 }
 
-.condition_list {}
+.condition_list {
+    overflow: hidden;
+    padding: 3px 0;
+}
 
 .condition_list li {
     width: 25%;
     float: left;
-    text-align: center;
     font-size: 16px;
     padding: 5px 0;
+    position: relative;
+}
+
+.text {
+    padding-left: 18px;
+
 }
 
 .condition_list li.active {
-    color: red;
+    color: #0058ff;
 }
 
 .condition_list li.active .icon_arrUp {
-    display: inline-block;
+    display: block;
 }
 
 .condition_list li.active .icon_arrDown {
@@ -44,10 +51,18 @@
 
 .icon_arrUp {
     display: none;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+}
+
+.icon_arrDown {
+    position: absolute;
+    top: 10px;
 }
 
 .condition_list li:hover {
-    border: 1px solid red;
+    border: 1px solid #0058ff;
 }
 
 .icon_arrDown,
@@ -55,27 +70,57 @@
     font-size: 12px;
     font-weight: 700;
     font-family: "SimSun";
+    margin-left: 3px;
+    right: 21px;
 }
 
 .active {
     display: block;
 }
 
+.tab_body {
+    position: relative;
+}
+
 .condition_bd {
     display: none;
-    padding: 10px 5px;
+    padding: 0 5px 5px 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    
 }
 
 .condition_bd li {
     float: left;
     margin-top: 20px;
     margin-right: 140px;
+    font-size: 14px;
+}
+
+.condition_bd li:nth-child(1),
+.condition_bd li:nth-child(2) {
+    margin-top: 5px;
 }
 
 .condition_bd.active {
     display: block;
+    position: absolute;
+    top: -1px;
+    z-index: 100000;
 }
 
 .condition_bd li.active {
-    color: red;
+    color: #0058ff;
+}
+
+.tab_mask {
+    width: 100%;
+    height: 700px;
+    background-color: #666;
+    position: fixed;
+    top: 246px;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
 }

@@ -1,0 +1,98 @@
+page {
+    background-color: #e0e0e0;
+}
+
+.speices .top-bg {
+    width: 100%;
+    height: 14px;
+    background-color: #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.speices .tab-h {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80px;
+    background: #f7f7f7;
+    font-size: 32px;
+    white-space: nowrap;
+    position: fixed;
+    top: 14px;
+    left: 0;
+    z-index: 99;
+}
+
+.speices .tab-item {
+    display: inline-block;
+}
+
+.speices .tab-item .dange {
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.speices .tab-item.active {
+    color: #487fe4;
+    position: relative;
+}
+
+.speices .tab-item.active:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 250px;
+    background: #4675f9;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    border-radius: 16px;
+}
+
+.tab-content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 15px 20px;
+    background-color: #e0e0e0;
+    border-top: 2px solid #e0e0e0;
+    font-size: 30px;
+    margin-top: 93px;
+}
+
+.tab-content .spac {
+    margin-right: 22px;
+    margin-top: 20px;
+    width: 342px;
+    float: left;
+}
+
+.tab-content .spac image {
+    width: 347px;
+    height: 250px;
+}
+
+.tab-content .spac .name {
+    text-align: center;
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #777;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: #fff;
+    min-height:80px;
+}
+
+.tab-content .scoll-h {
+    height: 100%;
+}

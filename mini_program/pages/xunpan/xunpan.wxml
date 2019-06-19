@@ -1,0 +1,45 @@
+<view class='xun-pan'>
+    <view class='xun-pic'>
+        <image src='{{imgUrl[0]}}'></image>
+    </view>
+
+    <view class='inter'>如果您对我们的产品感兴趣的话，请填写下面的表单！</view>
+
+    <view class='form-box'>
+        <view class='item'>
+            <view><text>*</text>姓名:</view>
+            <input type='text' value='{{linkman}}' data-info='linkman' bindinput='inputChange'></input>
+        </view>
+        <view class='item'>
+            <view><text>*</text>电话:</view>
+            <input type='number' value='{{phone}}' data-info='phone' bindinput='inputChange' bindchange="bindInputBlur"></input>
+        </view>
+        <view class='item'>
+            <view><text>*</text>购买产品:</view>
+            <input type='text' value='{{title}}' data-info='title' bindinput='inputChange'></input>
+        </view>
+        <view class='item l'>
+            <view><text>*</text>购买数量:</view>
+            <input type='number' value='{{order_total}}' data-info='order_total' bindinput='inputChange'></input>
+        </view>
+    </view>
+
+    <view class='submit' bindtap='xunPan'>提交</view>
+</view>
+<!-- 询盘弹框 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">系统提示</view>
+  <view class="modal-content" wx:if="{{xpFlag == false}}">
+    提交成功,稍后联系您
+  </view>
+  <view class="modal-content" wx:if="{{xpFlag}}">
+    询盘失败
+  </view>
+  <view class="modal-footer">
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+<logo></logo>
+<kefu></kefu>

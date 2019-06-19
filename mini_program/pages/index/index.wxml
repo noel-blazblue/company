@@ -1,0 +1,45 @@
+<view class='swiper'>
+    <swiper class='s' indicator-dots="true" indicator-color="rgba(255,255,255,0.4)" indicator-active-color="#fff" autoplay="true" interval="3000" duration="500">
+        <block wx:for="{{imgUrls}}" wx:key='{{item}}'>
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%" height="360" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<view class='pro-center'>
+    <view class='pro'>产品中心</view>
+    <view class='more' bindtap='goFenLei'>更多》</view>
+</view>
+
+<view class='pro-con'>
+    <view class='item' bindtap='goDetail' wx:for='{{productList}}' wx:key='{{item}}' id='{{index}}'>
+        <image src='{{item.show_image}}'></image>
+        <view class='name'>{{item.title}}</view>
+    </view>
+</view>
+
+<view class='pro-mes'>
+    <view class='pro-mes-t'>企业信息</view>
+</view>
+
+<view class='pro-mesage'> 
+    <view class='pro-l'>
+        <view>{{corpInfo.corpname}}</view>
+        <view>电话： {{corpInfo.mobile1}}</view>
+        <view>QQ： {{corpInfo.qq || '暂无'}}</view>
+        <view>地址： {{corpInfo.address}}</view>
+        <view>pc官网：http://{{corpInfo.corpdomain}}.cn.makepolo.com</view>
+        <view>wap官网：http://{{corpInfo.corpdomain}}.m.makepolo.com</view>
+    </view>
+    <view class='pro-r'><canvas canvas-id="canvas" style="width: 150px; height: 150px" bindtap='goYellow'></canvas></view>
+</view>
+
+<logo></logo>
+<!-- 
+<view class='logo' wx:if='{{showBottomText}}'>
+    <image src='../imgs/logo-j.png'></image>
+    <view>马可波罗提供技术支持</view>
+</view> -->
+<kefu></kefu>

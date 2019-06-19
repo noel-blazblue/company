@@ -1,0 +1,18 @@
+<import src='../../wxParse/wxParse.wxml' />
+<view class='introduce'>
+    <view class='company-pic'>
+        <!-- <image src='{{imgUrl[0]}}'></image> -->
+        <map longitude='{{lng}}' latitude='{{lat}}' style='width:100%;height:360rpx;' markers="{{markers}}"></map>
+    </view>
+
+    <view class='company-in'><template is='wxParse' data='{{wxParseData:introduction.nodes}}' /> </view>
+    <!-- <rich-text nodes='{{corpInfo.introduction}}'></rich-text> -->
+
+    <view class='ewm-box'>
+        <view class='ewm'><canvas canvas-id="canvas" style="width: 150px; height: 150px"></canvas></view>
+    </view>
+
+    <view class='call' bindtap='makePhoneCall'>拨打电话</view>
+</view>
+<logo></logo>
+<kefu></kefu>

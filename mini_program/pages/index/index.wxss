@@ -1,0 +1,126 @@
+page {
+    background-color: #e0e0e0;
+}
+
+.swiper .s {
+    height: 360rpx;
+}
+
+.swiper image {
+    width: 100%;
+    height: 360rpx;
+}
+
+.pro-center {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10rpx;
+    box-sizing: border-box;
+    padding: 10rpx 20rpx 10rpx 20rpx;
+}
+
+.pro-center .pro {
+    color: #487fe4;
+    font-size: 36rpx;
+    border-left: 7rpx solid #487fe4;
+    box-sizing: border-box;
+    padding-top: -3rpx;
+    padding-left: 16rpx;
+    font-weight: bold;
+}
+
+.pro-center .more {
+    font-size: 26rpx;
+    margin-top: 6rpx;
+}
+
+.pro-con {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rpx 20rpx 6rpx 20rpx;
+    background-color: #e0e0e0;
+    border-top: 2rpx solid #e0e0e0;
+    font-size: 28rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pro-con .item {
+    margin-top: 20rpx;
+    /* border:2rpx solid #ccc;s */
+    text-align: center;
+    background-color: #fff;
+}
+
+.pro-con .item image {
+    width: 347rpx;
+    height: 250rpx;
+}
+
+.pro-con .item .name {
+    text-align: center;
+    width: 350rpx;
+    overflow: hidden;
+    white-space: nowarp;
+    text-overflow: ellipsis;
+    color: #777;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.pro-mes {
+    width: 100%;
+    margin-top: 10rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10rpx 20rpx 10rpx 20rpx;
+}
+
+.pro-mes .pro-mes-t {
+    color: #487fe4;
+    font-size: 36rpx;
+    border-left: 7rpx solid #487fe4;
+    box-sizing: border-box;
+    padding-top: -3rpx;
+    padding-left: 16rpx;
+    font-weight: bold;
+}
+
+.pro-mesage {
+    border-top: 2rpx solid #e0e0e0;
+    background-color: #fff;
+    padding-bottom: 60rpx;
+}
+
+.pro-mesage .pro-l {
+    font-size: 26rpx;
+    margin-left: 30rpx;
+}
+
+.pro-mesage .pro-l view {
+    margin-top: 36rpx;
+}
+
+.pro-mesage .pro-r {
+    width: 230rpx;
+    height: 240rpx;
+    margin-left: 55rpx;
+    margin-top: 30rpx;
+    padding-bottom: 40rpx;
+}
+
+/* .logo {
+    text-align: center;
+    font-size: 20rpx;
+    background-color: rgba(250, 250, 250, 0.7);
+    color: #ddd;
+    padding-bottom: 20rpx;
+}
+
+.logo image {
+    width: 50rpx;
+    height: 50rpx;
+} */

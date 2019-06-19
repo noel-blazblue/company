@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "联系方式",
+    "usingComponents": {
+        "logo": "/components/logo/logo",
+        "kefu": "/components/kefu/kefu"
+    }
+}

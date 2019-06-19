@@ -1,0 +1,127 @@
+/* pages/xunpan/xunpan.wxss */
+
+.xun-pic image {
+    width: 100%;
+    height: 360rpx;
+}
+
+.inter {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    border-bottom: 2rpx solid #e0e0e0;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+}
+
+.form-box {
+    width: 90%;
+    border: 2rpx solid #555;
+    margin: 60rpx auto;
+}
+
+.form-box .item {
+    width: 100%;
+    height: 82rpx;
+    font-size: 30rpx;
+    line-height: 82rpx;
+    box-sizing: border-box;
+    padding-left: 54rpx;
+    display: flex;
+    border-bottom: 2rpx solid #555;
+    position: relative;
+}
+
+.form-box .l {
+    border-bottom: none;
+}
+
+.form-box .item input {
+    width: 78%;
+    height: 100%;
+}
+
+.form-box .item text {
+    color: #e0002b;
+    font-size: 44rpx;
+    margin-top: 25rpx;
+    position: absolute;
+    top: -14rpx;
+    left: 24rpx;
+}
+
+.submit {
+    width: 90%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    margin: 100rpx auto;
+    background-color: #487fe4;
+    color: #fff;
+    font-size: 32rpx;
+}
+.show-btn {
+    margin-top: 100rpx;
+    color: #2c2;
+}
+
+.modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+}
+
+.modal-dialog {
+    width: 540rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    background: #f9f9f9;
+    margin: -180rpx 105rpx;
+    border-radius: 36rpx;
+    box-sizing: border-box;
+    padding-bottom: 44rpx;
+}
+
+.modal-title {
+    padding-top: 74rpx;
+    font-size: 46rpx;
+    color: #030303;
+    text-align: center;
+}
+
+.modal-content {
+    padding: 50rpx 32rpx;
+    text-align: center;
+    font-size: 32rpx;
+    margin-bottom: 43rpx;
+    border-bottom: 1px solid #000;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    height: 86rpx;
+    font-size: 34rpx;
+    line-height: 86rpx;
+    justify-content: center;
+}
+
+.btn-confirm {
+    width: 400rpx;
+    text-align: center;
+    background-color: #487fe4;
+    color: #fff;
+    border-radius: 21rpx;
+}
+

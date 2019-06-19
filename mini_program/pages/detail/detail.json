@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "产品详情",
+    "usingComponents": {
+        "logo": "/components/logo/logo",
+        "kefu": "/components/kefu/kefu"
+    }
+}

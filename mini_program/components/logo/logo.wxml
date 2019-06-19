@@ -1,0 +1,5 @@
+<!--components/logo/logo.wxml-->
+<view class='logo'>
+    <image src='/pages/imgs/logo-j.png'></image>
+    <view>马可波罗提供技术支持(makepolo.com)</view>
+</view>

@@ -1,0 +1,53 @@
+<view class='company-pic'>
+    <image src='{{imgUrl[0]}}'></image>
+</view>
+
+<view class='company-title'>
+    <view class='company-l'>{{corpInfo.corpname}}</view>
+    <!-- <view class='company-r'>
+        <image src='../imgs/wx.png'></image>
+        <text>在线客服</text>
+    </view> -->
+</view>
+
+<view class='compony-mes'>
+    <view class='phone f'>
+        <view class='phone-l'>
+            <image src='../imgs/pnhone.png'></image>
+            <text>{{corpInfo.mobile1}}</text>
+        </view>
+        <view class='phone-r' bindtap='makePhoneCall'>点击拨打</view>
+    </view>
+    <view class='phone'>
+        <view class='phone-l'>
+            <image src='../imgs/qq.png'></image>
+            <text>{{corpInfo.qq || '暂无'}}</text>
+        </view>
+    </view>
+    <view class='phone'>
+        <view class='phone-l'>
+            <image src='../imgs/wxx.png'></image>
+            <text>暂无</text>
+        </view>
+    </view>
+    <view class='phone'>
+        <view class='phone-l'>
+            <image src='../imgs/weibo.png'></image>
+            <text>暂无</text>
+        </view>
+    </view>
+    <view class='phone'>
+        <view class='phone-l'>
+            <image src='../imgs/address.png'></image>
+            <view class='address'>{{corpInfo.address}}</view>
+        </view>
+    </view>
+    <view class='ewm-box'>
+        <view class='erwm'><canvas canvas-id="canvas" style="width: 150px; height: 150px"></canvas></view>
+    </view>
+</view>
+<view class='call' bindtap='makePhoneCall'>
+    拨打电话
+</view>
+<logo></logo>
+<kefu></kefu>
