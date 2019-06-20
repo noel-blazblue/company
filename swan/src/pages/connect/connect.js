@@ -4,6 +4,7 @@ import withWeapp from '@tarojs/with-weapp'
 import Kefu from '../../components/kefu/kefu'
 import Logo from '../../components/logo/logo'
 import './connect.scss'
+
 // pages/connect/connect.js
 var QRCode = require('../../utils/weapp-qrcode.js')
 

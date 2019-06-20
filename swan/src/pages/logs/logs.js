@@ -28,11 +28,11 @@ class _C extends Taro.Component {
     return (
       <Block>
         {/* logs.wxml */}
-        <View className="container log-list">
+        <View className='container log-list'>
           {logs.map((log, index) => {
             return (
               <Block>
-                <Text className="log-item">{index + 1 + '. ' + log}</Text>
+                <Text className='log-item'>{index + 1 + '. ' + log}</Text>
               </Block>
             )
           })}

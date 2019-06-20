@@ -159,84 +159,84 @@ class _C extends Taro.Component {
     } = this.state
     return (
       <Block>
-        <View className="xun-pan">
-          <View className="xun-pic">
+        <View className='xun-pan'>
+          <View className='xun-pic'>
             <Image src={imgUrl[0]} />
           </View>
-          <View className="inter">
+          <View className='inter'>
             如果您对我们的产品感兴趣的话，请填写下面的表单！
           </View>
-          <View className="form-box">
-            <View className="item">
+          <View className='form-box'>
+            <View className='item'>
               <View>
                 <Text>*</Text>姓名:
               </View>
               <Input
-                type="text"
+                type='text'
                 value={linkman}
-                data-info="linkman"
+                data-info='linkman'
                 onInput={this.inputChange}
               />
             </View>
-            <View className="item">
+            <View className='item'>
               <View>
                 <Text>*</Text>电话:
               </View>
               <Input
-                type="number"
+                type='number'
                 value={phone}
-                data-info="phone"
+                data-info='phone'
                 onInput={this.inputChange}
                 onChange={this.bindInputBlur}
               />
             </View>
-            <View className="item">
+            <View className='item'>
               <View>
                 <Text>*</Text>购买产品:
               </View>
               <Input
-                type="text"
+                type='text'
                 value={title}
-                data-info="title"
+                data-info='title'
                 onInput={this.inputChange}
               />
             </View>
-            <View className="item l">
+            <View className='item l'>
               <View>
                 <Text>*</Text>购买数量:
               </View>
               <Input
-                type="number"
+                type='number'
                 value={order_total}
-                data-info="order_total"
+                data-info='order_total'
                 onInput={this.inputChange}
               />
             </View>
           </View>
-          <View className="submit" onClick={this.xunPan}>
+          <View className='submit' onClick={this.xunPan}>
             提交
           </View>
         </View>
         {/*  询盘弹框  */}
         {showModal && (
           <View
-            className="modal-mask"
+            className='modal-mask'
             onClick={this.hideModal}
             onTouchMove={this.preventTouchMove}
           />
         )}
         {showModal && (
-          <View className="modal-dialog">
-            <View className="modal-title">系统提示</View>
+          <View className='modal-dialog'>
+            <View className='modal-title'>系统提示</View>
             {xpFlag == false && (
-              <View className="modal-content">提交成功,稍后联系您</View>
+              <View className='modal-content'>提交成功,稍后联系您</View>
             )}
-            {xpFlag && <View className="modal-content">询盘失败</View>}
-            <View className="modal-footer">
+            {xpFlag && <View className='modal-content'>询盘失败</View>}
+            <View className='modal-footer'>
               <View
-                className="btn-confirm"
+                className='btn-confirm'
                 onClick={this.onConfirm}
-                data-status="confirm"
+                data-status='confirm'
               >
                 确定
               </View>

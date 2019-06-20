@@ -62,6 +62,7 @@ class _C extends Taro.Component {
     }
     this.getSpacies()
   }
+  // 控制选中的标签居中
   checkCor = () => {
     var that = this
     if (this.data.currentTab >= 3 && this.data.currentTab <= 5) {
@@ -82,6 +83,7 @@ class _C extends Taro.Component {
       })
     }
   }
+  // 获取分类和产品列表
   getSpacies = () => {
     var that = this
     Taro.request({
@@ -124,7 +126,7 @@ class _C extends Taro.Component {
     this.getSpacies()
   }
 
-  componentWillMount(options) {
+  componentWillMount() {
     var that = this
     //  高度自适应
     Taro.getSystemInfo({
@@ -178,9 +180,9 @@ class _C extends Taro.Component {
       showBottomText: showBottomText
     } = this.state
     return (
-      <View className="speices">
-        <View className="top-bg" />
-        <ScrollView scrollX="true" className="tab-h" scrollLeft={scrollLeft}>
+      <View className='speices'>
+        <View className='top-bg' />
+        <ScrollView scrollX='true' className='tab-h' scrollLeft={scrollLeft}>
           {catList.map((item, index) => {
             return (
               <View
@@ -188,7 +190,7 @@ class _C extends Taro.Component {
                 key={item}
               >
                 <View
-                  className="dange"
+                  className='dange'
                   data-current={index}
                   onClick={this.swichNav}
                 >
@@ -199,37 +201,37 @@ class _C extends Taro.Component {
           })}
         </ScrollView>
         <Swiper
-          className="tab-content"
+          className='tab-content'
           current={currentTab}
-          duration="300"
+          duration='300'
           onChange={this.switchTab}
           style={'height:' + winHeight + 'rpx'}
         >
           {catList.length.map((item, index) => {
             return (
-              <SwiperItem key="[{item}">
+              <SwiperItem key='[{item}'>
                 <ScrollView
                   scrollY
-                  className="scoll-h"
+                  className='scoll-h'
                   onScrollToLower={this.bindDownLoad}
                 >
                   {proList.map((item, index) => {
                     return (
                       <Block key={item}>
                         <View
-                          className="spac"
+                          className='spac'
                           onClick={this.goDetail}
                           id={index}
                         >
                           <Image src={item.show_image} />
-                          <View className="name">{item.title}</View>
+                          <View className='name'>{item.title}</View>
                         </View>
                       </Block>
                     )
                   })}
-                  <View style="clear:both;" />
+                  <View style='clear:both;' />
                   {showBottomText && (
-                    <View className="showBottomText" style="text-align:center">
+                    <View className='showBottomText' style='text-align:center'>
                       没有了！
                     </View>
                   )}
