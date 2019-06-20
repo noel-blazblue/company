@@ -1,4 +1,4 @@
-import { Block, View, Image } from '@tarojs/components'
+import { Block, View, Image, RichText } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import withWeapp from '@tarojs/with-weapp'
 import Kefu from '../../components/kefu/kefu'
@@ -15,7 +15,20 @@ class _C extends Taro.Component {
   state = {
     product_desc: '',
     proInfo: {},
-    proid: ''
+    // eslint-disable-next-line react/no-unused-state
+    proid: '',
+    // eslint-disable-next-line react/no-unused-state
+    nodes: [{
+      name: 'div',
+      attrs: {
+        class: 'div_class',
+        style: 'line-height: 60px; color: red;'
+      },
+      children: [{
+        type: 'html',
+        text: 'Hello World!'
+      }]
+    }]
   }
   goXunpan = () => {
     Taro.navigateTo({
@@ -40,10 +53,11 @@ class _C extends Taro.Component {
             res.data.data.product_desc,
             that,
             5
-          ),
+          )
             that.setData({
               proInfo: res.data.data
             })
+         
         }
       }
     })
@@ -59,6 +73,9 @@ class _C extends Taro.Component {
 
   componentDidShow() {
     this.getDetailMessage(this.data.proid)
+    // let nodes = this.state.nodes
+    // nodes[0].children[0].text = '<div>这是一个div</div>'
+    // this.setState({ nodes: nodes})
   }
 
   componentDidHide() {}
@@ -97,6 +114,9 @@ class _C extends Taro.Component {
               /> */}
               {/*  <rich-text nodes='{{proInfo.product_desc}}'></rich-text>  */}
             </View>
+            {/* <View>eowahfoawehfuo</View>
+            <RichText nodes={this.state.nodes} /> */}
+
           </View>
           <View className='xunpan-box' onClick={this.goXunpan}>
             <View className='xunpan'>在线询盘</View>
