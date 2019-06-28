@@ -1,0 +1,213 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 1058px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  height: 94px;
+  background-color: #fff;
+}
+
+
+
+.banner {
+  position: relative;
+}
+
+.logo {
+  margin-left: -94px;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 0;
+}
+
+.left {
+  left: 495px;
+}
+
+.right {
+  left: 879px;
+}
+
+.title {
+  margin-top: 83px; 
+}
+
+.title p {
+  font-size: 28px;
+  color: #fff;
+  margin-top: 22px;
+}
+
+.qrcode {
+  margin-top: 47px;
+}
+
+.qrcode .f_r {
+  margin-left: 36px;
+  padding-top: 44px;
+}
+
+.down_box {
+  width: 279px;
+  height: 244px;
+  background-color: #fff;
+  text-align: center;
+}
+.down_box img {
+  margin-top: 41px;
+  width: 146px;
+  height: 146px;
+}
+
+.qrcode .f_r img {
+  display: block;
+}
+.qrcode .f_r img:first-of-type {
+  margin-bottom: 31px;
+}
+
+.fonter {
+  height: 384px;
+  background-color: #fff;
+}
+
+.qrcode_one {
+  margin-left: 138px;
+}
+
+.qrcode_one p,
+.qrcode_two p {
+  margin-left: 61px;
+  font-size: 17px;
+  color: #666;
+}
+
+.contact {
+  margin-top: 141px;
+  margin-left: 49px;
+  font-size: 20px;
+  color: #42b3e7;
+}
+
+.hd img {
+  display: block;
+  margin: 76px auto 112px auto;
+}
+
+.feature {
+  margin-top: 40px;
+}
+
+.r_feature,
+.l_feature {
+  margin-bottom: 84px;
+
+}
+
+
+.feature h3 {
+  margin-top: 5px;
+  color: #804de5;
+  font-size: 32px;
+  /* font-weight: normal; */
+  line-height: 120px;
+}
+.feature .l_feature h3 {
+  text-align: right;
+}
+
+.feature p {
+  color: #666;
+  line-height: 37px;
+  width: 559px;
+  font-size: 18px;
+}
+
+.box {
+  background-color: #fff;
+  width: 201px;
+  height: 201px;
+  text-align: center;
+}
+
+.banner_qr {
+  width: 80%;
+  margin-top: 19px;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 12px/1 '微软雅黑','Microsoft YaHei',Helvetica,Arial;
+}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置文本格式元素 **/
+a { text-decoration: none; color:#000;}
+a:hover { 
+	text-decoration: none;
+	color:#3863c9 !important; 
+}
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+button {
+    background-color: none;
+}
+mark { background: #ff0; }
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clear {
+    clear: both;
+    visibility: hidden;
+}
+.topphone {
+    color: #ff000d;
+}
+body { box-sizing: border-box;}
+* {box-sizing: border-box;
+}
+.f_l {
+    float: left;
+}
+.f_r {
+    float: right;
+}
