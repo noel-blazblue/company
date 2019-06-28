@@ -1,0 +1,111 @@
+@import '../../../styles/mixins.scss';
+@mixin padding-style {
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+@mixin letter-color {
+	font-size:28px;
+	color:#666;
+	margin-top:40px;
+}
+.point {
+	.point-purchase {
+		@include padding-style;
+	}
+	.yu-wrap {
+		@include letter-color;
+		.item {
+			margin-right: 40px;
+		}
+	}
+	.purchase-title {
+		@include letter-color;
+	}
+	.cpc-wrap {
+		margin-top:70px;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		.item {
+			width:310px;
+			height:132px;
+			font-size:28px;
+			text-align:center;
+			background:#f0f0f0;
+			color:#666;
+			border-radius:20px;
+			.wrap {
+				margin-top:30px;
+			}
+			.blue {
+				color:#2b95fd;
+			}
+			&.active {
+				background:#3ba9db;
+				color:#fff;
+				.blue {
+					color:#fff;
+				}
+			}
+		}
+	}
+	.purchase-now {
+		width:70%;
+		height:80px;
+		margin:120px auto 60px;
+		text-align:center;
+		line-height:80px;
+		font-size:28px;
+		color:#fff;
+		box-shadow: 0 10px 10px -5px rgba(0,0,0,0.2);
+		background:#3ba9db;
+		border-radius:12px;
+	}
+	.protocol-wrap {
+		text-align:center;
+		font-size:26px;
+		color:#666;
+		.check-img {
+			width:24px;
+			height:24px;
+			vertical-align: middle;
+		}
+		.protocol {
+			color:#3ba9db;
+		}
+	}
+}
+.point-box{
+	@include padding-style;
+	.no-data-box {
+		.purchase {
+			@include record-no-data;
+		}
+	}
+	.con {
+		display: flex;
+		justify-content: space-between;
+		font-size: 26px;
+		color: #666;
+		padding: 40px 0;
+		border-bottom: 2px solid #efefef;
+		.t {
+			width: 31%;
+			text-align:center;
+			overflow: hidden;
+			text-overflow: clip;
+      display: -webkit-box;
+      -webkit-line-clamp:2;
+    	-webkit-box-orient: vertical;
+		}
+		.fo {
+			width: 22%;
+			text-align:center;
+		}
+	}
+}
+.scroll-box {
+	width: 100%;
+	background: #f6f6f6;
+	padding-top: 34px;
+}

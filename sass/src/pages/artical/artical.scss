@@ -1,0 +1,104 @@
+@import '../../styles/mixins.scss';
+page {
+	background:#f6f6f6;
+	color:#666;
+	.wrap {
+		margin-top:30px;
+	}
+	.item {
+		.item-name {
+			margin-right:26px;
+			height:80px;
+			line-height:80px;
+		}
+		.input {
+			width:100%;
+			height: 94px;
+			background:#fff;
+			box-sizing: border-box;
+			padding-left: 24px;
+			font-size: 30px;
+		}
+		.inputs {
+			margin-top: 2px;
+		}
+		.textarea {
+			width:100%;
+			height:392px;
+			background:#fff;
+			margin-top:30px;
+			font-size: 30px;
+			box-sizing: border-box;
+			padding-left: 24px;
+			padding-top: 24px;
+		}
+	}
+	.items {
+		display:block;
+		.img-wrap {
+			position: relative;
+			margin-top: 30px;	
+			width:100%;
+			height:350px;
+			background:#fff;
+			text-align:center;
+			font-size:30px;
+			.choose-cover {
+				display: block;
+				box-sizing: border-box;
+				padding-left: 24px;
+				padding-top: 24px;
+				text-align: left;
+			}
+			.upload {
+				position: absolute;
+				top: 110px;
+				left: 50%;
+				margin-left: -180px;
+				width: 360px;
+				height: 200px;
+				border: 2px solid #ddd;
+			}
+			.up-img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25px;
+				margin-top: -25px;
+				width:50px;
+				height:50px;
+			}
+			.show-img {
+				width:360px;
+				height:200px;
+			}
+		}	
+	}
+	.issues-btn {
+		display: flex;
+		margin-top: 60px;
+		border-radius: 10px;
+		.issues {
+			width: 50%;
+			height: 70px;
+			background:#fff;
+			text-align:center;
+			line-height: 70px;
+			font-size: 28px;
+		}
+		.pre {
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		.sss {
+			background: #3BA9DB;
+			color: #fff;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+	}
+	.issue {
+		@include big-btn;
+		margin-top:72px;
+	}
+}

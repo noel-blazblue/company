@@ -25,7 +25,7 @@ class _C extends Taro.Component {
     imgUrls: [],
     corpInfo: {},
     productList: [],
-    imgHeight: 0
+    // imgHeight: 0
     //   introduction:{}
   }
   goDetail = e => {

@@ -1,0 +1,22 @@
+.nav-purchase-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top:40px;
+  height: 80px;
+  font-size: 34px;
+  color: #666;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  .nav-item {
+    line-height: 40px;
+  }
+  .active {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3ba9db;
+    transform: translateY(-5px);
+  }
+}

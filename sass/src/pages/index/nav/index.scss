@@ -1,0 +1,19 @@
+.nav-wrap {
+	display:flex;
+	flex-wrap:wrap;
+	margin-bottom: 30px;
+	.nav-item {
+		width:25%;
+		margin-bottom:30px;
+		text-align:center;
+		.nav-img {
+			width:120px;
+			height:120px;
+		}
+		.nav-name {
+			display:block;
+			font-size:26px;
+			color: #666;
+		}
+	}
+}
