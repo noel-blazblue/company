@@ -33,7 +33,7 @@ button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie
 /** 重置表格元素 **/
 table { border-collapse: collapse; border-spacing: 0; }
 /* 重置 HTML5 元素 */
-article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+article, aside, details, figcaption, figure, footer,header,f.f_l hgroup, menu, nav, section,
 summary, time, mark, audio, video {
     display: block;
     margin: 0;

@@ -59,8 +59,7 @@ class App extends Taro.Component {
         }
       ],
       selectedColor: '#487FE4'
-    },
-    sitemapLocation: 'sitemap.json'
+    }
   }
 
   render() {

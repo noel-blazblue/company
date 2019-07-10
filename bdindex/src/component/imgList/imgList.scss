@@ -1,0 +1,84 @@
+.ImgList {
+  .title {
+    display: block;
+    color: #3963cc;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 24px;
+    position: relative;
+    .name {
+      margin: 0 40px;
+    }
+  }
+  .img_list {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 15px 0 15px;
+    flex-wrap: wrap;
+    .item {
+      margin-bottom: 70px;
+      width: 214px;
+      height: 272px;
+      text-align: center;
+      font-size: 28px;
+      position: relative;
+      padding-bottom: 30px;
+      .img {
+        width: 214px;
+        height: 162px;
+      }
+      .pro_title {
+        color: #666;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .price {
+        color: #fc0505;
+      }
+    }
+    .item.goods {
+      width: 328px;
+      height: 255px;
+      text-align: center;
+      font-size: 28px;
+      position: relative;
+      padding-bottom: 30px;
+      .img {
+        width: 328px;
+        height: 255px;
+      }
+    }
+  }
+}
+
+.v_item {
+  width: 356px;
+  position: relative;
+  .img {
+    width: 356px;
+    height: 218px;
+  }
+  .pro_title {
+    width: 100%;
+    color: #666;
+    margin-top: 7.79px;
+    font-size: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 356px;
+    height: 218px;
+  }
+}

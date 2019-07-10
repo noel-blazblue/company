@@ -6,9 +6,14 @@ $(function() {
         $tab_li = $('.recommend_list .tab_hd li'),
         tab_list = [{ele:$dd},{ele:$li},{ele:$a},{ele:$tab_li}],
         $phone = $('.block2')
+        $enquiryBtn = $('.enqiryBtn')
+        $enquiryBox = $('.linkbox_dialog')
+        $enquiryclose = $('#link_box_close')
 
         toggleClass(tab_list)
         hidden($phone)
+        showPop($enquiryBtn, $enquiryBox)
+        hiddenPop($enquiryclose, $enquiryBox)
 
 })
 
@@ -33,5 +38,23 @@ function toggleClass(list) {
 function hidden(ele) {
     ele.on('click',function (){
         $(this).css('display','none')
+    })
+}
+
+function show(ele) {
+    ele.on('click',function (){
+        $(this).css('display','block')
+    })
+}
+
+function hiddenPop(ele,target) {
+    ele.on('click', function() {
+        target.css('display', 'none')
+    })
+}
+
+function showPop(ele,target) {
+    ele.on('click', function() {
+        target.css('display', 'block')
     })
 }

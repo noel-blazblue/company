@@ -4,11 +4,11 @@ import withWeapp from '@tarojs/with-weapp'
 import Kefu from '../../components/kefu/kefu'
 import Logo from '../../components/logo/logo'
 import './detail.scss'
+import TaroBdparse from '../../components/taroBdparse/taroBdparse'
 
 // pages/detail/detail.js
 const config = require('../../config.js')
 const app = Taro.getApp()
-var WxParse = require('../../wxParse/wxParse.js')
 
 @withWeapp('Page')
 class _C extends Taro.Component {
@@ -47,17 +47,10 @@ class _C extends Taro.Component {
       },
       success: function(res) {
         if (res.data.no == 1) {
-          WxParse.wxParse(
-            'product_desc',
-            'html',
-            res.data.data.product_desc,
-            that,
-            5
-          )
-            that.setData({
-              proInfo: res.data.data
-            })
-         
+          that.setData({
+            proInfo: res.data.data,
+            product_desc: res.data.data.product_desc
+          })
         }
       }
     })
@@ -90,7 +83,7 @@ class _C extends Taro.Component {
   }
 
   render() {
-    const { proInfo: proInfo, product_desc: product_desc } = this.state
+    const { proInfo: proInfo, product_desc } = this.state
     return (
       <Block>
         <View className='detail'>
@@ -113,6 +106,9 @@ class _C extends Taro.Component {
                 }}
               /> */}
               {/*  <rich-text nodes='{{proInfo.product_desc}}'></rich-text>  */}
+              <View>
+                <TaroBdparse desc={product_desc} />
+              </View>
             </View>
             {/* <View>eowahfoawehfuo</View>
             <RichText nodes={this.state.nodes} /> */}

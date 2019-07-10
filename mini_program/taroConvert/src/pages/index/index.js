@@ -9,24 +9,30 @@ import {
 import Taro from '@tarojs/taro'
 import withWeapp from '@tarojs/with-weapp'
 import Kefu from '../../components/kefu/kefu'
-import Logo from '../../components/logo/logo'
 import './index.scss'
 
 //index.js
 //获取应用实例
 const app = Taro.getApp()
 const config = require('../../config.js')
-var WxParse = require('../../wxParse/wxParse.js')
 var QRCode = require('../../utils/weapp-qrcode.js')
 
 @withWeapp('Page')
 class _C extends Taro.Component {
+  config = {
+    navigationBarTitleText: '公司首页'
+  }
   state = {
     imgUrls: [],
     corpInfo: {},
     productList: [],
     // imgHeight: 0
     //   introduction:{}
+  }
+  componentWillMount() {}
+
+  componentDidShow() {
+    this.getYellowMessage()
   }
   goDetail = e => {
     console.log('e', e.currentTarget.id)
@@ -89,19 +95,8 @@ class _C extends Taro.Component {
       }
     })
   }
-  goYellow = () => {}
 
-  componentWillMount() {}
-
-  componentDidShow() {
-    this.getYellowMessage()
-  }
-
-  onReachBottom = () => {}
-  onShareAppMessage = () => {}
-  config = {
-    navigationBarTitleText: '公司首页'
-  }
+ 
 
   render() {
     const {
@@ -136,7 +131,7 @@ class _C extends Taro.Component {
               )
             })}
           </Swiper>
-        </View>
+        </View> 
         <View className='pro-center'>
           <View className='pro'>产品中心</View>
           <View className='more' onClick={this.goFenLei}>
@@ -182,12 +177,6 @@ class _C extends Taro.Component {
             />
           </View>
         </View>
-        <Logo />
-        {/*  
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <view class='logo' wx:if='{{showBottomText}}'>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <image src='../imgs/logo-j.png'></image>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <view>马可波罗提供技术支持</view>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </view>  */}
         <Kefu />
       </Block>
     )

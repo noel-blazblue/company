@@ -1,0 +1,38 @@
+@import "~taro-ui/dist/style/index.scss";
+
+// * {
+//     box-sizing: border-box;
+// }
+  
+.box_sizing {
+    box-sizing: border-box;
+}
+
+.inner {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    align-items: center;
+}
+.hui-text{
+    color: #9C9C9C;
+    font-size: 25px;
+}
+.list_title{
+ font-size: 30px;
+ overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+.hot-title{
+    font-size: 35px;
+    font-weight: 500;
+    color: #3c78d8;
+    text-align: center;
+    margin-top: 10px;
+    
+}

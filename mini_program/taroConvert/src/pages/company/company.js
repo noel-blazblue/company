@@ -8,37 +8,15 @@ import Taro from '@tarojs/taro'
 import withWeapp from '@tarojs/with-weapp'
 import Kefu from '../../components/kefu/kefu'
 import Logo from '../../components/logo/logo'
-// import TaroParseaaTmpl from '../../imports/TaroParseaaTmpl.js'
-// import TaroParseazTmpl from '../../imports/TaroParseazTmpl.js'
-// import TaroParseiTmpl from '../../imports/TaroParseiTmpl.js'
-// import TaroParsehTmpl from '../../imports/TaroParsehTmpl.js'
-// import TaroParsegTmpl from '../../imports/TaroParsegTmpl.js'
-// import TaroParsefTmpl from '../../imports/TaroParsefTmpl.js'
-// import TaroParseeTmpl from '../../imports/TaroParseeTmpl.js'
-// import TaroParsedTmpl from '../../imports/TaroParsedTmpl.js'
-// import TaroParsecTmpl from '../../imports/TaroParsecTmpl.js'
-// import TaroParsebTmpl from '../../imports/TaroParsebTmpl.js'
-// import TaroParseaTmpl from '../../imports/TaroParseaTmpl.js'
-// import TaroParsezTmpl from '../../imports/TaroParsezTmpl.js'
-// import TaroParseTmpl from '../../imports/TaroParseTmpl.js'
-// import TaroParseBrTmpl from '../../imports/TaroParseBrTmpl.js'
-// import TaroEmojiViewTmpl from '../../imports/TaroEmojiViewTmpl.js'
-// import TaroParseImgTmpl from '../../imports/TaroParseImgTmpl.js'
-// import TaroParseVideoTmpl from '../../imports/TaroParseVideoTmpl.js'
 import './company.scss'
-// pages/company/company.js
-const app = Taro.getApp()
-const config = require('../../config.js')
+
 var QRCode = require('../../utils/weapp-qrcode.js')
-var WxParse = require('../../wxParse/wxParse.js')
 const QQMapWX = require('../../utils/qqmap-wx-jssdk.min.js')
 
 @withWeapp('Page')
 class _C extends Taro.Component {
   state = {
-    corpInfo: {},
     introduction: '',
-    imgUrl: [],
     lng: '',
     lat: '',
     markers: [
@@ -81,18 +59,13 @@ class _C extends Taro.Component {
     })
   }
 
-  componentWillMount(options) {}
+  componentWillMount() {}
 
   componentDidMount() {}
 
   componentDidShow() {
     var corpinfo = Taro.getStorageSync('corpinfo')
-    var imgUrl = Taro.getStorageSync('imgUrl')
-    WxParse.wxParse('introduction', 'html', corpinfo.introduction, this, 5),
-      this.setData({
-        corpInfo: corpinfo,
-        imgUrl: imgUrl
-      })
+
     var qrcode = new QRCode('canvas', {
       text: 'http://' + corpinfo.corpdomain + '.m.makepolo.com/',
       width: 150,
@@ -124,30 +97,24 @@ class _C extends Taro.Component {
     } = this.state
     return (
       <Block>
-        <View className="introduce">
-          <View className="company-pic">
-            {/*  <image src='{{imgUrl[0]}}'></image>  */}
+        <View className='introduce'>
+          <View className='company-pic'>
             <Map
               longitude={lng}
               latitude={lat}
-              style="width:100%;height:360rpx;"
+              style='width:100%;height:360rpx;'
               markers={markers}
             />
           </View>
-          <View className="company-in">
-            <TaroParseTmpl
-              data={{
-                wxParseData: introduction.nodes
-              }}
-            />
+          <View className='company-in'>
+
           </View>
-          {/*  <rich-text nodes='{{corpInfo.introduction}}'></rich-text>  */}
-          <View className="ewm-box">
-            <View className="ewm">
-              <Canvas canvasId="canvas" style="width: 150px; height: 150px" />
+          <View className='ewm-box'>
+            <View className='ewm'>
+              <Canvas canvasId='canvas' style='width: 150px; height: 150px' />
             </View>
           </View>
-          <View className="call" onClick={this.makePhoneCall}>
+          <View className='call' onClick={this.makePhoneCall}>
             拨打电话
           </View>
         </View>

@@ -230,3 +230,200 @@
 .license_img {
     margin-bottom: 110px;
 }
+
+/* 弹框 */
+.linkbox_dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(00,00,00,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    display: none;
+}
+.bomb_box {
+    width: 892px;
+    height: 390px;
+    position: fixed;
+    top: 50%;
+    margin-top: -195px;
+    left: 50%;
+    margin-left: -426px;
+    background: #fff;
+}
+.bomb_box .close {
+    background: url(http://jic.makepolo.net/css/yellow/product_medium_page/sprite/product_middle_only_20170606.png) no-repeat;
+    height: 42px;
+    width: 43px;
+    background-position: -42px 0;
+    float: right;
+}
+.box_title {
+    width: 100%;
+    height: 57px;
+    border-bottom: solid 1px #33b3ed;
+    margin-top: 4px;
+}
+.title_left {
+    width: 400px;
+    height: 57px;
+    float: left;
+    padding-left: 52px;
+}
+.title_right {
+    float: right;
+    font-size: 18px;
+    color: #666;
+    line-height: 62px;
+    margin-right: 60px;
+}
+.box_main {
+    width: 100%;
+}
+.contact {
+    font-size: 20px;
+    color: #333;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 52px;
+}
+.box_main ul {
+    /* width: 815px; */
+    margin-left: 52px;
+    overflow: hidden;
+}
+.box_main ul li {
+    font-size: 18px;
+    color: #666;
+    float: left;
+    margin-top: 5px;
+    height: 60px;
+    overflow: hidden;
+}
+.li_even {
+    width: 453px;
+}
+.box_main ul li span {
+    display: block;
+    float: left;
+    width: 86px;
+    height: 43px;
+    line-height: 43px;
+}
+.star_1 {
+    float: left;
+    background: url(http://jic.makepolo.net/css/yellow/product_medium_page/sprite/product_middle_only_20170606.png) no-repeat;
+    height: 40px;
+    width: 29px;
+    background-position: -13px 0;
+}
+.box_main ul li input {
+    width: 146px;
+    outline-color: #e4e4e4;
+    color: #333;
+    padding-left: 19px;
+    font-size: 19px;
+    height: 39px;
+    line-height: 39px;
+    float: left;
+    border: solid 1px #e4e4e4;
+}
+.box_main ul li span {
+    display: block;
+    float: left;
+    width: 86px;
+    height: 43px;
+    line-height: 43px;
+}
+.onTip {
+    height: 0 !important;
+}
+.bomb_box .yzm {
+    width: 96px;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    color: #fff;
+    background-color: silver;
+    font-size: 14px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.li_odd span {
+    width: 105px !important;
+}
+.bomb_box .button {
+    width: 333px;
+    height: 42px;
+    margin: auto;
+    margin-top: 10px;
+    line-height: 42px;
+    position: relative;
+}
+.bomb_box .button div {
+    width: 120px;
+    float: left;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_sure {
+    background-color: #ff7a33;
+    color: #fff;
+}
+.btn_close {
+    border: solid 1px #ffe1cc;
+    background-color: #ffe8d1;
+    color: #ff6e0c;
+    margin-left: 91px;
+}
+.bomb_box .link_purchase {
+    display: block;
+    clear: both;
+    text-align: center;
+    margin-top: 33px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.title_left_1 {
+    line-height: 57px;
+    font-size: 24px;
+    color: #333;
+    float: left;
+}
+.title_left_2 {
+    line-height: 60px;
+    color: #fa0303;
+    font-size: 23px;
+    float: left;
+    margin-left: 10px;
+}
+.bomb_box .title_p {
+    width: 260px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.title_right p {
+    float: left;
+}
+.company_logo {
+    background: url(http://jic.makepolo.net/css/yellow/product_medium_page/sprite/product_middle_only_20170606.png) no-repeat;
+    height: 17px;
+    width: 13px;
+    background-position: 0 0;
+    float: left;
+    margin-top: 22px;
+    margin-left: 12px;
+}
+a:link, a:visited {
+    color: #039;
+}
+.clearfixed {
+    zoom: 1;
+}
